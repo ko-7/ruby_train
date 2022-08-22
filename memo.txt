@@ -1,2 +1,19 @@
-〇ブランチ作成
-　git chackout -b [ブランチ名]
+〇Gitコマンド
+　push先記憶　；git push -u [ブランチ名]
+                ⇒以降git push でpushできるようになる！
+　ブランチ作成：git chackout -b [ブランチ名]
+
+〇generate、destroyコマンド
+　controller作成
+　　rails generate controller StaticPages home help
+  controller削除
+    rails destroy controller StaticPages home help
+  model作成
+  　rails generate model User name:string email:string
+  model削除
+    rails destroy model User
+
+〇マイグレーションとそのやり直し
+　実行            ：rails db:migrate
+  １つ戻る        ：rails db:rollback
+  任意の場所に戻る：rails db:migrate VERSION=0
