@@ -1,8 +1,3 @@
-〇Gitコマンド
-　push先記憶　；git push -u [ブランチ名]
-                ⇒以降git push でpushできるようになる！
-　ブランチ作成：git chackout -b [ブランチ名]
-
 〇generate、destroyコマンド
 　controller作成
 　　rails generate controller StaticPages home help
