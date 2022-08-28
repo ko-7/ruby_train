@@ -12,6 +12,7 @@ class UsersController < ApplicationController
     # @user = User.new(params[:user])
     @user = User.new(user_params)  #脆弱性向上！
     if @user.save
+      log_in @user
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
         # ↑ redirect_to user_url(@user) の省略形
